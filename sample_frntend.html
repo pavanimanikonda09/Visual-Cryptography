@@ -1,0 +1,76 @@
+<!--GUI Code-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viweport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-image: url("A.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .flex-container{
+            display: flex;
+            text-align: center;
+        }
+        
+        .flex-child{
+            flex: 1;
+            text-align: center;
+            padding: 5%;
+        }
+        
+        .link-box{
+            margin-top: 65%;
+            position: relative;
+        }
+
+        .button-box{
+            position: relative;
+        }
+
+        input{
+            border: 5px solid gold;
+            padding: 10px;
+            font-size: larger;
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+    <title>Cyber GUI</title>
+</head>
+
+<body>
+    <div>
+        <div class="flex-container">
+            <div class="flex-child enc">
+                <form action="cyber.php" method="post">
+                        <div class="link-box">
+                            <input type="text" name="text1" placeholder="Enter Image Path Link">
+                        </div>
+                        <div class="button-box">
+                            <br><br><br><br><input type="submit" name = "submit" class="login-btn" value="Submit">
+                        </div>
+                </form>
+            </div>
+            <div class="flex-child dec">
+                <form action="cyber.php" method="post">
+                    <div class="link-box">
+                        <input type="text" name="text2" placeholder="Enter Image Path Link">
+                    </div>
+                    <div class="button-box">
+                        <br><br><br><br><input type="submit" name = "submit" class="login-btn" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
